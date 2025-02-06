@@ -15,26 +15,26 @@
 <body class="bg-[#161513] text-[#c5c5c5] text-base md:text-lg">
     <header class="bg-[#222] py-4">
         <nav class="max-w-5xl mx-auto px-6 lg:px-0 flex justify-between items-center">
-            <div class="w-20 flex ">
+            <div class="w-20 flex">
                 <img src="./src/images/logo.png" alt="abm logo" class="justify-center" />
             </div>
             <div class="hidden md:flex space-x-6 text-lg">
-                <a href="#" class="text-white">Home</a>
-                <a href="#" class="text-white">Project</a>
-                <a href="#" class="text-white">Experience</a>
-                <a href="#" class="text-white">Contact</a>
+                <a href="#home" class="text-white">Home</a>
+                <a href="#projects" class="text-white">Project</a>
+                <a href="#experience" class="text-white">Experience</a>
+                <a href="#contact" class="text-white">Contact</a>
             </div>
             <button id="menu-toggle" class="md:hidden text-white text-xl">☰</button>
             <div id="mobile-menu"
                 class="hidden absolute top-16 left-0 w-full bg-[#222] flex flex-col space-y-4 p-4 text-center md:hidden">
-                <a href="#" class="text-white">Home</a>
-                <a href="#" class="text-white">Project</a>
-                <a href="#" class="text-white">Experience</a>
-                <a href="#" class="text-white">Contact</a>
+                <a href="#home" class="text-white">Home</a>
+                <a href="#projects" class="text-white">Project</a>
+                <a href="#experience" class="text-white">Experience</a>
+                <a href="#contact" class="text-white">Contact</a>
             </div>
         </nav>
     </header>
-    <section class="container mx-auto text-center py-20 px-4">
+    <section id="home" class="container mx-auto text-center py-20 px-4">
         <div class="mx-auto w-[251px]">
             <img src="./src/images/avatar.png" alt="abm avatar" />
         </div>
@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="text-center py-20 px-4">
+    <section id="experience" class="text-center py-20 px-4">
         <h2 class="text-xl md:text-2xl">EXPERIENCE WITH</h2>
         <div class="flex flex-wrap justify-center gap-6 mt-6">
             <img src="./src/images/html5.png" alt="html logo" class="w-10 cursor-pointer" />
@@ -72,7 +72,7 @@
             <img src="./src/images/javascript.png" alt="js logo" class="w-10 cursor-pointer" />
         </div>
     </section>
-    <section class="container mx-auto text-center py-20 px-4">
+    <section id="projects" class="container mx-auto text-center py-20 px-4">
         <h2 class="text-3xl bg-gradient-to-b from-orange-400 to-red-600 text-transparent bg-clip-text">PROJECTS</h2>
         <div class="flex flex-wrap justify-center gap-6 mt-10">
             <div class="bg-[#2a2a2a] rounded-xl overflow-hidden w-full md:w-[30%]">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-[#191919] text-center py-10 px-4">
+    <footer id="contact" class="bg-[#191919] text-center py-10 px-4">
         <div class="container mx-auto">
             <h2 class="text-white text-2xl mb-4">
                 Contact</h2>
@@ -120,6 +120,7 @@
             </div>
         </div>
     </footer>
+    <script src="./src/scrpt.js"></script>
 </body>
 
 </html>

@@ -74,4 +74,4 @@ MIT
 
 ## Author
 
-John Doe
+Hitarth Shah

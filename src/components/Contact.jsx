@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
 } from "@heroicons/react/24/outline";
+import emailjs from "@emailjs/browser";
 import SectionTitle from "./SectionTitle";
 
 export default function Contact() {
@@ -16,6 +17,11 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init("nmdnDp7WhLi59XsFV");
+  }, []);
 
   const contactInfo = [
     {
@@ -41,13 +47,37 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: "Hitarth Shah",
+        to_email: "shahh0919@gmail.com",
+        reply_to: formData.email,
+      };
 
-    setSubmitStatus("success");
-    setIsSubmitting(false);
-    setFormData({ name: "", email: "", subject: "", message: "" });
+      const response = await emailjs.send(
+        "service_shahh",
+        "template_shahh",
+        templateParams
+      );
+
+      if (response.status === 200) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
 
     // Reset status after 5 seconds
     setTimeout(() => setSubmitStatus(null), 5000);
@@ -197,6 +227,12 @@ export default function Contact() {
               {submitStatus === "success" && (
                 <p className="mt-4 text-green-400">
                   Thank you! Your message has been sent successfully.
+                </p>
+              )}
+              {submitStatus === "error" && (
+                <p className="mt-4 text-red-400">
+                  Sorry, there was an error sending your message. Please try
+                  again.
                 </p>
               )}
             </div>

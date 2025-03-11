@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-800;
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  .btn {
+    @apply px-4 py-2 font-medium transition-colors rounded-md;
+  }
+
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-sky-600;
+  }
+
+  .btn-outline {
+    @apply border border-slate-300 hover:bg-slate-100;
+  }
+
+  .section-title {
+    @apply mb-6 text-3xl font-bold text-center md:text-4xl;
+  }
+
+  .card {
+    @apply p-6 bg-white rounded-lg shadow-md;
+  }
+}

@@ -19,7 +19,8 @@ export default function Portfolio() {
       description:
         "A modern e-commerce platform built with React.js and Node.js, featuring real-time inventory management and secure payment processing.",
       tech: ["React.js", "Node.js", "MongoDB", "Stripe"],
-      link: "#",
+      liveUrl: "https://ecommerce-demo.hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/ecommerce-platform",
     },
     {
       id: 2,
@@ -30,7 +31,8 @@ export default function Portfolio() {
       description:
         "A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
-      link: "#",
+      liveUrl: "https://tasks.hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/task-manager",
     },
     {
       id: 3,
@@ -41,7 +43,8 @@ export default function Portfolio() {
       description:
         "A modern portfolio website built with React.js and Tailwind CSS, featuring smooth animations and responsive design.",
       tech: ["React.js", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      liveUrl: "https://hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/portfolio",
     },
     {
       id: 4,
@@ -52,7 +55,8 @@ export default function Portfolio() {
       description:
         "Custom Shopify theme with optimized checkout flow and responsive design. Implemented product bundling, subscription options, and enhanced product galleries. Improved mobile conversions by 35% and reduced cart abandonment.",
       tech: ["Shopify", "Liquid", "JavaScript", "SCSS"],
-      link: "#",
+      liveUrl: "https://shopify-theme.hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/shopify-theme",
     },
     {
       id: 5,
@@ -63,7 +67,8 @@ export default function Portfolio() {
       description:
         "Interactive admin dashboard with comprehensive data visualization, user management, and reporting features. Implemented real-time updates using WebSockets and complex data filtering. Reduced manual reporting time by 70%.",
       tech: ["React", "Redux", "Chart.js", "Socket.io"],
-      link: "#",
+      liveUrl: "https://dashboard.hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/react-dashboard",
     },
     {
       id: 6,
@@ -74,7 +79,8 @@ export default function Portfolio() {
       description:
         "Modern landing page for a SaaS product with interactive elements, testimonial carousel, and pricing comparison table. Implemented A/B testing that resulted in 45% higher conversion rates. Optimized for SEO and accessibility.",
       tech: ["HTML5", "CSS3", "JavaScript", "Webflow"],
-      link: "#",
+      liveUrl: "https://landing.hitarthshah.com",
+      githubUrl: "https://github.com/hitarthsh/landing-page",
     },
   ];
 
@@ -133,27 +139,29 @@ export default function Portfolio() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <div
-              key={index}
+              key={project.id}
               className="group rounded-2xl bg-slate-800 border border-slate-700 overflow-hidden hover:border-primary-500 transition-colors"
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4 z-10">
                   <a
-                    href={project.link}
+                    href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-slate-800 text-white hover:bg-primary-500 transition-colors"
+                    aria-label="View Live Demo"
                   >
                     <ArrowTopRightOnSquareIcon className="w-6 h-6" />
                   </a>
                   <a
-                    href={project.githubUrl || "#"}
+                    href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-slate-800 text-white hover:bg-primary-500 transition-colors"
+                    aria-label="View Source Code"
                   >
                     <CodeBracketIcon className="w-6 h-6" />
                   </a>

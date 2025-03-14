@@ -11,12 +11,12 @@ export default function About() {
   const education = [
     {
       degree: "Bachelor of Technology - B.Tech",
-      institution: "Silver Oak University",
+      institution: "C. U. Shah University",
       period: "Sep 2022 - Jun 2025",
     },
     {
       degree: "Diploma in Computer Engineering",
-      institution: "C. U. Shah University",
+      institution: "Government Polytechnic Rajkot",
       period: "Aug 2019 - May 2022",
     },
   ];

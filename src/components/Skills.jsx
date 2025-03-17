@@ -14,6 +14,7 @@ export default function Skills() {
       skills: [
         { name: "React.js", level: 90 },
         { name: "Next.js", level: 85 },
+        { name: "Gatsby.js", level: 85 },
         { name: "JavaScript/ES6+", level: 90 },
         { name: "TypeScript", level: 80 },
         { name: "HTML5/CSS3", level: 95 },
@@ -23,11 +24,12 @@ export default function Skills() {
       title: "UI Frameworks & Tools",
       icon: HiPaintBrush,
       skills: [
+        { name: "Bootstrap CSS", level: 95 },
         { name: "Tailwind CSS", level: 95 },
         { name: "Material-UI", level: 85 },
         { name: "Styled Components", level: 85 },
-        { name: "Framer Motion", level: 80 },
         { name: "Figma", level: 75 },
+        { name: "Adobe XD", level: 75 },
       ],
     },
     {
@@ -37,6 +39,7 @@ export default function Skills() {
         { name: "Node.js", level: 80 },
         { name: "Express.js", level: 75 },
         { name: "MongoDB", level: 70 },
+        { name: "GraphQL ", level: 70 },
         { name: "RESTful APIs", level: 85 },
         { name: "Git/GitHub", level: 90 },
       ],
@@ -49,6 +52,7 @@ export default function Skills() {
         { name: "WooCommerce", level: 85 },
         { name: "Shopify", level: 80 },
         { name: "Webflow", level: 75 },
+        { name: "Wix", level: 75 },
         { name: "SEO Optimization", level: 85 },
       ],
     },
@@ -123,18 +127,18 @@ export default function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                name: "React.js Advanced Concepts",
-                issuer: "Meta",
-                date: "2023",
-              },
-              {
-                name: "Frontend Web Development",
-                issuer: "freeCodeCamp",
-                date: "2023",
-              },
-              {
-                name: "Modern JavaScript",
+                name: "HTML5 & CSS3 Complete Course: Build Websites like a Pro",
                 issuer: "Udemy",
+                date: "2024",
+              },
+              {
+                name: "Google Cloud career readiness Cloud Digital Leader track",
+                issuer: "Google",
+                date: "2023",
+              },
+              {
+                name: "Google Cloud Certified Prfessional Cloud Architect",
+                issuer: "Google",
                 date: "2022",
               },
             ].map((cert, index) => (

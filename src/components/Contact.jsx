@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  EnvelopeIcon,
-  PhoneIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
+import { HiEnvelope, HiPhone, HiMapPin } from "react-icons/hi2";
 import emailjs from "@emailjs/browser";
 import SectionTitle from "./SectionTitle";
 
@@ -25,19 +21,19 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: EnvelopeIcon,
+      icon: HiEnvelope,
       title: "Email",
       content: "shahh0919@gmail.com",
       link: "mailto:shahh0919@gmail.com",
     },
     {
-      icon: PhoneIcon,
+      icon: HiPhone,
       title: "Phone",
       content: "+91 8488820605",
       link: "tel:+918488820605",
     },
     {
-      icon: MapPinIcon,
+      icon: HiMapPin,
       title: "Location",
       content: "Rajkot, Gujarat, India",
       link: "https://maps.google.com/?q=Rajkot,Gujarat,India",

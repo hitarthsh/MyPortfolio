@@ -1,9 +1,5 @@
 import { useState } from "react";
-import {
-  ArrowTopRightOnSquareIcon,
-  TagIcon,
-  CodeBracketIcon,
-} from "@heroicons/react/24/outline";
+import { HiArrowTopRightOnSquare, HiTag, HiCodeBracket } from "react-icons/hi2";
 import SectionTitle from "./SectionTitle";
 
 export default function Portfolio() {
@@ -154,7 +150,7 @@ export default function Portfolio() {
                     className="p-3 rounded-full bg-slate-800 text-white hover:bg-primary-500 transition-colors"
                     aria-label="View Live Demo"
                   >
-                    <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                    <HiArrowTopRightOnSquare className="w-6 h-6" />
                   </a>
                   <a
                     href={project.githubUrl}
@@ -163,7 +159,7 @@ export default function Portfolio() {
                     className="p-3 rounded-full bg-slate-800 text-white hover:bg-primary-500 transition-colors"
                     aria-label="View Source Code"
                   >
-                    <CodeBracketIcon className="w-6 h-6" />
+                    <HiCodeBracket className="w-6 h-6" />
                   </a>
                 </div>
                 <img
@@ -209,7 +205,7 @@ export default function Portfolio() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 text-white border border-slate-700 hover:bg-slate-700 transition-all group"
           >
             View More Projects
-            <ArrowTopRightOnSquareIcon className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            <HiArrowTopRightOnSquare className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>

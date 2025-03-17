@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { HiBars3, HiXMark } from "react-icons/hi2";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
@@ -159,9 +159,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <XMarkIcon className="w-6 h-6" />
+              <HiXMark className="w-6 h-6" />
             ) : (
-              <Bars3Icon className="w-6 h-6" />
+              <HiBars3 className="w-6 h-6" />
             )}
           </button>
         </nav>

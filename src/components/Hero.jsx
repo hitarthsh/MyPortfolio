@@ -1,8 +1,4 @@
-import {
-  ArrowDownIcon,
-  CodeBracketIcon,
-  RocketLaunchIcon,
-} from "@heroicons/react/24/outline";
+import { HiArrowDown, HiCodeBracket, HiRocketLaunch } from "react-icons/hi2";
 
 export default function Hero() {
   return (
@@ -81,7 +77,7 @@ export default function Hero() {
                 <span className="block text-sm font-medium mb-1">
                   Discover More
                 </span>
-                <ArrowDownIcon className="w-6 h-6 animate-bounce group-hover:translate-y-1 transition-transform" />
+                <HiArrowDown className="w-6 h-6 animate-bounce group-hover:translate-y-1 transition-transform" />
               </a>
             </div>
           </div>

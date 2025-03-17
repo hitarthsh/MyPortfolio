@@ -1,10 +1,10 @@
 import {
-  AcademicCapIcon,
-  BriefcaseIcon,
-  UserIcon,
-  LightBulbIcon,
-  CheckCircleIcon,
-} from "@heroicons/react/24/outline";
+  HiAcademicCap,
+  HiBriefcase,
+  HiUser,
+  HiLightBulb,
+  HiCheckCircle,
+} from "react-icons/hi2";
 import SectionTitle from "./SectionTitle";
 
 export default function About() {
@@ -69,7 +69,7 @@ export default function About() {
           {/* Key Achievements */}
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-800/80 border border-slate-700 h-full">
             <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-3">
-              <CheckCircleIcon className="w-7 h-7 text-primary-400 flex-shrink-0" />
+              <HiCheckCircle className="w-7 h-7 text-primary-400 flex-shrink-0" />
               Key Achievements
             </h3>
             <ul className="space-y-4">
@@ -89,7 +89,7 @@ export default function About() {
           {/* Education */}
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-800/80 border border-slate-700 h-full">
             <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-3">
-              <AcademicCapIcon className="w-7 h-7 text-primary-400 flex-shrink-0" />
+              <HiAcademicCap className="w-7 h-7 text-primary-400 flex-shrink-0" />
               Education
             </h3>
             <div className="space-y-6">

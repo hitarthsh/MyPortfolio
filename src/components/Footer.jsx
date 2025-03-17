@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from "@heroicons/react/24/outline";
+import { HiArrowUp } from "react-icons/hi2";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -144,7 +144,7 @@ export default function Footer() {
             className="p-2 bg-slate-700 hover:bg-primary rounded-md text-white transition-colors group"
             aria-label="Scroll to top"
           >
-            <ArrowUpIcon className="h-5 w-5 group-hover:animate-bounce" />
+            <HiArrowUp className="h-5 w-5 group-hover:animate-bounce" />
           </button>
         </div>
       </div>

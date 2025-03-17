@@ -1,16 +1,16 @@
 import {
-  CodeBracketIcon,
-  PaintBrushIcon,
-  CommandLineIcon,
-  WindowIcon,
-} from "@heroicons/react/24/outline";
+  HiCodeBracket,
+  HiPaintBrush,
+  HiCommandLine,
+  HiWindow,
+} from "react-icons/hi2";
 import SectionTitle from "./SectionTitle";
 
 export default function Skills() {
   const skillCategories = [
     {
       title: "Frontend Development",
-      icon: CodeBracketIcon,
+      icon: HiCodeBracket,
       skills: [
         { name: "React.js", level: 90 },
         { name: "Next.js", level: 85 },
@@ -21,7 +21,7 @@ export default function Skills() {
     },
     {
       title: "UI Frameworks & Tools",
-      icon: PaintBrushIcon,
+      icon: HiPaintBrush,
       skills: [
         { name: "Tailwind CSS", level: 95 },
         { name: "Material-UI", level: 85 },
@@ -32,7 +32,7 @@ export default function Skills() {
     },
     {
       title: "Backend & Tools",
-      icon: CommandLineIcon,
+      icon: HiCommandLine,
       skills: [
         { name: "Node.js", level: 80 },
         { name: "Express.js", level: 75 },
@@ -43,7 +43,7 @@ export default function Skills() {
     },
     {
       title: "CMS & E-commerce",
-      icon: WindowIcon,
+      icon: HiWindow,
       skills: [
         { name: "WordPress", level: 90 },
         { name: "WooCommerce", level: 85 },

@@ -35,8 +35,8 @@ export default function Contact() {
     {
       icon: HiMapPin,
       title: "Location",
-      content: "Rajkot, Gujarat, India",
-      link: "https://maps.google.com/?q=Rajkot,Gujarat,India",
+      content: "Ahmedabad, Gujarat, India",
+      link: "https://maps.google.com/?q=Ahmedabad,Gujarat,India",
     },
   ];
 

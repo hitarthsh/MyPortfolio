@@ -120,10 +120,12 @@ export default function Skills() {
         </div>
 
         {/* Certifications Section */}
-        <div className="mt-20">
-          <h3 className="text-2xl font-bold text-center text-slate-200 mb-8">
-            Professional Certifications
-          </h3>
+        <div className="mt-20 py-6">
+          <SectionTitle>
+          <span className="bg-gradient-to-r from-primary-400 via-secondary-400 to-accent-400 text-transparent bg-clip-text">
+          Professional Certifications
+          </span>
+        </SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {

@@ -40,8 +40,8 @@ function App() {
               <main>
                 <Hero />
                 <About />
-                <Skills />
                 <Portfolio />
+                <Skills />
                 <Contact />
               </main>
             }

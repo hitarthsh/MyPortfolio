@@ -134,7 +134,7 @@ export default function Footer() {
             <div className="md:col-span-2 md:flex md:justify-end">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+                  <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                   <ul className="space-y-2">
                     {footerLinks.map((link, index) => (
                       <li key={index}>

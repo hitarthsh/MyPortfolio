@@ -68,15 +68,15 @@ export default function Portfolio() {
     },
     {
       id: 6,
-      title: "Landing Page Design",
-      category: "design",
+      title: "2048",
+      category: "SCSS",
       image:
         "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       description:
-        "Modern landing page for a SaaS product with interactive elements, testimonial carousel, and pricing comparison table. Implemented A/B testing that resulted in 45% higher conversion rates. Optimized for SEO and accessibility.",
-      tech: ["HTML5", "CSS3", "JavaScript", "Webflow"],
-      liveUrl: "https://landing.hitarthshah.com",
-      githubUrl: "https://github.com/hitarthsh/landing-page",
+        "A sliding tile puzzle game where players combine numbered tiles to reach the 2048 tile.",
+      tech: ["HTML5", "CSS3", "JavaScript", "SCSS"],
+      liveUrl: "https://hitarthsh.github.io/2048/",
+      githubUrl: "https://github.com/hitarthsh/2048",
     },
   ];
 
@@ -84,7 +84,7 @@ export default function Portfolio() {
     { id: "all", name: "All Projects" },
     { id: "web", name: "Web Development" },
     { id: "wordpress", name: "WordPress" },
-    { id: "shopify", name: "Shopify" },
+    { id: "SCSS", name: "SCSS" },
     { id: "design", name: "Design" },
   ];
 

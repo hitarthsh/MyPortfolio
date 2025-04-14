@@ -75,7 +75,7 @@ export default function Portfolio() {
       description:
         "A sliding tile puzzle game where players combine numbered tiles to reach the 2048 tile.",
       tech: ["HTML5", "CSS3", "JavaScript", "SCSS"],
-      liveUrl: "https://hitarthsh.github.io/2048/",
+      liveUrl: "https://2048.hitarthshah.tech/",
       githubUrl: "https://github.com/hitarthsh/2048",
     },
   ];

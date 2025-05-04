@@ -136,7 +136,7 @@ export default function FreelancerTerms() {
               9. Contact Information
             </h2>
             <p className="text-slate-300">
-              For any questions regarding these terms, please contact:
+              For any questions regarding these terms, please contact Hitarth Shah:
             </p>
             <p className="mt-2 text-slate-300">
               Email: shahh0919@gmail.com

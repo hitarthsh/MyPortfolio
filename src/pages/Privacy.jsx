@@ -117,7 +117,7 @@ export default function Privacy() {
             </h2>
             <p className="text-slate-300">
               If you have any questions about this Privacy Policy, please
-              contact us at:
+              contact Hitarth Shah:
             </p>
             <p className="mt-2 text-slate-300">
               Email: shahh0919@gmail.com

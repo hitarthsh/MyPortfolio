@@ -33,3 +33,35 @@ body {
     @apply p-6 bg-white rounded-lg shadow-md;
   }
 }
+
+/* Smooth Scroll Styles */
+#smooth-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Ensure proper scrolling behavior */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Optional: Add smooth transition for all scrollable elements */
+* {
+  scroll-behavior: smooth;
+}

@@ -120,7 +120,7 @@ export default function Privacy() {
               contact Hitarth Shah:
             </p>
             <p className="mt-2 text-slate-300">
-              Email: shahh0919@gmail.com
+              Email: info@hitarthshah.com
               <br />
               Phone: (+91) 8488820605
             </p>

@@ -176,7 +176,7 @@ export default function Footer() {
                         href="mailto:shahh0919@gmail.com"
                         className="text-slate-400 hover:text-primary transition-colors"
                       >
-                        shahh0919@gmail.com
+                        info@hitarthshah.com
                       </a>
                     </li>
                     <li>
@@ -229,7 +229,8 @@ export default function Footer() {
 
         <div className="py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()}  Developed & Managed By Hitarth Shah. All rights reserved 
+            &copy; {new Date().getFullYear()} Developed & Managed By Hitarth
+            Shah. All rights reserved
           </p>
 
           <button

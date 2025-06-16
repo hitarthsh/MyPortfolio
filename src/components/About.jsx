@@ -41,6 +41,9 @@ export default function About() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center text-white mb-12 animate-fade-in">
+          About Hitarth Shah
+        </h1>
         <SectionTitle>
           <span className="bg-gradient-to-r from-primary-400 via-secondary-400 to-accent-400 text-transparent bg-clip-text">
             About Me

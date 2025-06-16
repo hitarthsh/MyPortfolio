@@ -69,7 +69,10 @@ export default function Skills() {
         <div className="absolute bottom-20 -right-16 sm:-right-20 md:-right-24 lg:-right-32 w-32 h-32 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-secondary-500/10 rounded-full blur-[50px] sm:blur-[64px] md:blur-[80px] lg:blur-[96px] opacity-40 sm:opacity-50 md:opacity-60 lg:opacity-70" />
       </div>
 
-      <div className="container relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center text-white mb-12 animate-fade-in">
+          My Technical Skills
+        </h1>
         <SectionTitle>
           <span className="bg-gradient-to-r from-primary-400 via-secondary-400 to-accent-400 text-transparent bg-clip-text">
             Technical Skills
@@ -122,10 +125,10 @@ export default function Skills() {
         {/* Certifications Section */}
         <div className="mt-20 py-6">
           <SectionTitle>
-          <span className="bg-gradient-to-r from-primary-400 via-secondary-400 to-accent-400 text-transparent bg-clip-text">
-          Professional Certifications
-          </span>
-        </SectionTitle>
+            <span className="bg-gradient-to-r from-primary-400 via-secondary-400 to-accent-400 text-transparent bg-clip-text">
+              Professional Certifications
+            </span>
+          </SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {

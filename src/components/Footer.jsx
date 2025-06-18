@@ -23,6 +23,17 @@ export default function Footer() {
       return;
     }
 
+    // For terms, privacy, and freelancer terms pages
+    if (
+      targetId === "/terms" ||
+      targetId === "/privacy" ||
+      targetId === "/freelancer-terms"
+    ) {
+      navigate(targetId);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
     // If it's a home page section link (contains #)
     if (targetId.includes("#")) {
       const sectionId = targetId.split("#")[1];
@@ -89,7 +100,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-800 text-white">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="py-12 border-b border-slate-700">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -132,7 +143,7 @@ export default function Footer() {
             </div>
 
             <div className="md:col-span-2 md:flex md:justify-end">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                   <ul className="space-y-2">
@@ -151,24 +162,6 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Skills</h3>
-                  <ul className="space-y-2">
-                    <li>
-                      <span className="text-slate-400">React.js</span>
-                    </li>
-                    <li>
-                      <span className="text-slate-400">Tailwind CSS</span>
-                    </li>
-                    <li>
-                      <span className="text-slate-400">WordPress</span>
-                    </li>
-                    <li>
-                      <span className="text-slate-400">Shopify</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
                   <h3 className="text-lg font-semibold mb-4">Contact</h3>
                   <ul className="space-y-2">
                     <li>
@@ -176,7 +169,7 @@ export default function Footer() {
                         href="mailto:shahh0919@gmail.com"
                         className="text-slate-400 hover:text-primary transition-colors"
                       >
-                        info@hitarthshah.com
+                        shahh0919@gmail.com
                       </a>
                     </li>
                     <li>

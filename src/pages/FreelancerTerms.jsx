@@ -140,7 +140,7 @@ export default function FreelancerTerms() {
               Shah:
             </p>
             <p className="mt-2 text-slate-300">
-              Email: info@hitarthshah.com
+              Email: shahh0919@gmail.com
               <br />
               Phone: (+91) 8488820605
             </p>

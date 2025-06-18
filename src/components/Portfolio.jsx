@@ -8,56 +8,8 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      category: "web",
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      description:
-        "A modern e-commerce platform built with React.js and Node.js, featuring real-time inventory management and secure payment processing.",
-      tech: ["React.js", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://ecommerce-demo.hitarthshah.com",
-      githubUrl: "https://github.com/hitarthsh/ecommerce-platform",
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      category: "web",
-      image:
-        "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      description:
-        "A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
-      liveUrl: "https://tasks.hitarthshah.com",
-      githubUrl: "https://github.com/hitarthsh/task-manager",
-    },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      category: "web",
-      image:
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      description:
-        "A modern portfolio website built with React.js and Tailwind CSS, featuring smooth animations and responsive design.",
-      tech: ["React.js", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "https://hitarthshah.com",
-      githubUrl: "https://github.com/hitarthsh/portfolio",
-    },
-    {
-      id: 4,
-      title: "Shopify Theme",
-      category: "shopify",
-      image:
-        "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      description:
-        "Custom Shopify theme with optimized checkout flow and responsive design. Implemented product bundling, subscription options, and enhanced product galleries. Improved mobile conversions by 35% and reduced cart abandonment.",
-      tech: ["Shopify", "Liquid", "JavaScript", "SCSS"],
-      liveUrl: "https://shopify-theme.hitarthshah.com",
-      githubUrl: "https://github.com/hitarthsh/shopify-theme",
-    },
-    {
-      id: 5,
       title: "React Dashboard",
-      category: "web",
+      category: "react",
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       description:
@@ -66,26 +18,15 @@ export default function Portfolio() {
       liveUrl: "https://dashboard.hitarthshah.com",
       githubUrl: "https://github.com/hitarthsh/react-dashboard",
     },
-    {
-      id: 6,
-      title: "2048",
-      category: "SCSS",
-      image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      description:
-        "A sliding tile puzzle game where players combine numbered tiles to reach the 2048 tile.",
-      tech: ["HTML5", "CSS3", "JavaScript", "SCSS"],
-      liveUrl: "https://2048.hitarthshah.tech/",
-      githubUrl: "https://github.com/hitarthsh/2048",
-    },
   ];
 
   const filters = [
     { id: "all", name: "All Projects" },
     { id: "web", name: "Web Development" },
-    { id: "wordpress", name: "WordPress" },
-    { id: "SCSS", name: "SCSS" },
-    { id: "design", name: "Design" },
+    { id: "react", name: "React.js" },
+    { id: "nextjs", name: "Next.js" },
+    { id: "uiux", name: "UI/UX Design" },
+    { id: "others", name: "Others" },
   ];
 
   const filteredProjects =
